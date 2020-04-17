@@ -1,0 +1,107 @@
+.shop
+
+    &__txt
+        text-align: center
+        height: 290px
+        font-size: 1.5rem
+        color: #54183c
+        padding: 0 0 0 50px
+        p
+            &:not(:last-child)
+                margin: 0 0 20px 0
+
+            &:last-child
+                font-size: 1rem
+    
+    &__list
+        display: flex
+        padding: 0 10px 0 0
+    
+    &__item
+        flex: 1
+        padding: 0 5px
+        cursor: pointer
+
+    &__footer
+        display: flex
+        padding: 0 35px 0 25px
+
+.prod
+    height: 260px
+
+    &:nth-child(1)
+        .prod__img
+            background: url(../img/prod1.png) no-repeat 50% 50% / contain
+            height: 200px
+
+    &:nth-child(2)
+        .prod__img
+            background: url(../img/prod2.png) no-repeat 50% 50% / contain
+            height: 200px
+
+    &:nth-child(3)
+        .prod__img
+            background: url(../img/prod3.png) no-repeat 50% 50% / contain
+            height: 200px
+
+    &__price
+        background: url(../img/price.png) no-repeat 50% 50% / contain
+        height: 75px
+        margin: -20px 0 0 0
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 1.75rem
+        text-shadow: 1px 1px 1px #aa1349, 0 2px 2px #aa1349, -2px 0 2px #aa1349, 0 -2px 2px #aa1349
+        &:hover
+            background: url(../img/pricehover.png) no-repeat 50% 50% / contain
+
+.trade
+    min-width: 295px
+    padding: 0 10px
+    display: flex
+
+    &__item
+        flex: 1
+        padding: 30px 0
+
+    &__numb
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #286d4e
+        font-size: 2rem
+        margin: 0 0 9px 0
+
+    &__price
+        background: url(../img/blue.png) no-repeat 50% 50% / contain
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-shadow: 1px 1px 1px #1367dc, 0 2px 2px #1367dc, -2px 0 2px #1367dc, 0 -2px 2px #1367dc
+        &:hover
+            background: url(../img/bluehover.png) no-repeat 50% 50% / contain
+
+.balance
+    padding: 30px 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    color: #10507c
+    font-size: 1.375rem
+
+    &__price
+        display: flex
+        align-items: center
+        font-size: 1.5rem
+
+.token
+    width: 35px
+    height: 35px
+    background: url(../img/token.png) no-repeat 50% 50% / contain
+    margin: 0 0 0 5px
+
+
+

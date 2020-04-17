@@ -1,0 +1,62 @@
+.game
+    background: url(../img/bg.jpg) no-repeat 50% 50%
+    background-size: cover
+    min-height: 100vh
+    display: flex
+    align-items: center
+
+    &__box
+        position: relative
+
+    &__img
+        position: relative
+        width: 100%
+        object-fit: contain
+        object-position: 50% 50%
+        z-index: 1
+
+    &__inner
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 10
+        display: flex
+        flex-direction: column
+
+    &__header
+        position: relative
+        display: flex
+        align-items: center
+        height: 130px
+
+    &__title
+        flex: 1  
+        text-align: center 
+        font-size: 2.3rem
+        @include textborder(#7F0B01)
+    
+    &__close
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        background: url(../img/close.png) no-repeat 50% 50% / contain
+        width: 50px
+        height: 50px
+        right: 170px
+        cursor: pointer
+
+    &__content
+        display: flex
+        flex: 1
+        padding: 0 20px
+    
+    &__left
+        flex: 1 0 655px
+        max-width: 655px
+        padding: 220px 55px 0 100px
+    
+    &__right
+        flex: 1
+        padding: 250px 0 0 0
